@@ -1,6 +1,8 @@
 const submitButton = document.querySelector('button');
 const inputList = document.querySelectorAll('input, textarea')
+const form = document.querySelector('form')
 submitButton.onclick = (event) => validateForm(event)
+window.onbeforeunload = () => form.reset()
 inputList.forEach(input =>
     input.oninput = () => clearError(input, input.validity))
 function validateForm(event) {
