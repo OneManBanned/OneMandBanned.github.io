@@ -1,0 +1,28 @@
+{
+  "name": "brendan_lawless_portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Portfolio website for Brendan Lawless",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch-path=src/ --env-file=.env src/app.js",
+    "start": "NODE_ENV=production node --env-file=.env src/app.js"
+  },
+  "keywords": [
+    "brendan",
+    "lawless",
+    "portfolio"
+  ],
+  "author": "Brendan Lawless",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "nodemailer": "^6.9.16"
+  },
+  "dev-dependencies": {
+    "livereload": "^0.9.3",
+    "connect-livereload": "^0.6.1"
+  }
+}
