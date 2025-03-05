@@ -100,7 +100,8 @@
                         Please fill in the form, and I'll get back to you as soon as
                         possible.</p>
                 </div>
-                <form class="contact-form" action="http://localhost:8000/" method="POST" novalidate>
+                <form class="contact-form" action="<%= (env === 'development') ? 'http://localhost:8000/' : 
+'https://www.brendanlawless.co.uk/' %>" method="POST" novalidate>
                     <div aria-live="assertive">
                         <label for="name">name</label>
                         <span class="nameErr error"><% if (errors.name) { %><%= errors.name %><% } %></span>
